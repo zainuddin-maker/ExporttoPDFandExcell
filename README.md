@@ -11,7 +11,7 @@
 
 <!-- <h4 align="center">A minimal Markdown Editor desktop app built on top of <a target="_blank">Electron</a>.</h4> -->
 
-![screenshot](https://github.com/zainuddin-maker/Export5pageCustomtoPDF/blob/master/test.gif?raw=true)
+![screenshot](https://github.com/zainuddin-maker/ExporttoPDFandExcell/blob/master/test.gif?raw=true)
 
 
 This application is used to generate documents in PDF and Excell file from data and the data from the thingworx platform
