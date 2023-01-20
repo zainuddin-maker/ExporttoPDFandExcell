@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Generate PDF from HTML using html to pdf library</title>
+        <!-- CDN URL - html2pdf library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    </head>
+
+    <body>
+        <div class="outer-content">
+            <div id="pdf-content">
+                <h2>PDF Page Title</h2>
+                <hr />
+                <p>How to generate a pdf from the <i>UI content</i> is easy.</p>
+                <p>
+                    This describes how to
+                    <strong>generate pdf from HTML</strong> using programming.
+                </p>
+            </div>
+            <hr />
+            <button id="btn-generate">Generate PDF</button>
+        </div>
+
+        <script>
+            var buttonElement = document.querySelector("#btn-generate");
+            buttonElement.addEventListener("click", function () {
+                // var pdfContent = document.querySelector("#pdf-content");
+                // html2pdf().from(pdfContent).save();
+
+                var pdfContent = document.querySelector("#pdf-content");
+
+             console.log("pdfContent")
+             console.log(pdfContent)
+                var optionArray = {
+                    margin: 10,
+                    filename: "output.pdf",
+                    // jsPDF: {
+                    //     unit: "in",
+                    //     format: "letter",
+                    //     orientation: "portrait",
+                    // },
+                };
+
+                // html to pdf generation with the reference of PDF worker object
+                html2pdf().set(optionArray).from(pdfContent).save();
+            });
+        </script>
+    </body>
+</html>

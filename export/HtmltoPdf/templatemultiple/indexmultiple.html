@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Convert HTML to multi-page Pdf</title>
+        <link href="style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="container">
+            <div class="link-container">
+                <select id="convertion-type">
+                    <option value="split">Split HTML to Multi-Page PDF</option>
+                    <option value="">Add HTML to PDF Page</option>
+                </select>
+                <button class="btn-convert">Convert HTML to PDF</button>
+            </div>
+            <div class="single-html-block">
+                <div id="html-template">
+                    <h1>Welcome to visit our event portal</h1>
+                    <!-- <img
+                        class="banner"
+                        src="event-banner.jpeg"
+                        width="100%"
+                        height="400px"
+                    /> -->
+                    <p class="description">
+                        Donec id leo quis felis vehicula bibendum sit amet ut
+                        tellus. Sed sagittis aliquet rhoncus. Pellentesque
+                        vulputate nunc ultricies, egestas augue ac, ullamcorper
+                        dui. Etiam diam mauris, molestie in purus a, venenatis
+                        pretium leo. Sed id metus eleifend, scelerisque neque
+                        id, posuere arcu. Nunc cursus et dui quis fringilla. In
+                        in turpis feugiat diam porttitor tempus. In hendrerit
+                        diam dolor, id pellentesque ante volutpat a. Nam tortor
+                        sapien, semper ut justo et, accumsan imperdiet sem. Sed
+                        euismod nunc vitae dolor porttitor ullamcorper. Donec
+                        sed lacinia dui. Nunc sed suscipit erat. Phasellus
+                        euismod ultrices velit, hendrerit tempor diam elementum
+                        ut.
+                    </p>
+                </div>
+
+                <div id="html-template1">
+					<div class="event-detail">
+						<h1>Thank you for registering with us.</h1>
+						<h2>This is the acknowledgement of your registeration for attending the
+							event.</h2>
+						<p class="row">
+							Event Name:<br />Machine learning introduction for kids
+						</p>
+						<p class="row">
+							Event Date:<br />27 May 2021
+						</p>
+						<p class="row">
+							Time:<br />10:30 AM
+						</p>
+						<p class="row">
+							Venue:<br />AMC Graduate Center,<br>25, AMC Street,<br>New York, USA.
+						</p>
+						<p class="pdf-content">
+							Contact our <a href="#">Organizers' Team</a> if you need any support.
+						</p>
+					</div>
+                </div>
+
+                <div id="html-template2">
+					<h2>Contact Us</h2>
+					<p>
+						T2, Ruth Isabel Villa<br /> 12, RGT Street,<br /> New york.
+					</p>
+					
+					<h2>Contact Numbers</h2>
+					<p>
+						Phone: 8909878.<br /> Fax: 678965.<br /> Mobile: 9878978.
+					</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+    <script src="convert.js"></script>
+</html>
